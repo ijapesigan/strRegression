@@ -1,0 +1,13 @@
+destination: pkgdown
+url: https://ijapesigan.github.io/strRegression/
+
+template:
+  package: rProject
+
+articles:
+- title: Getting Started
+  contents:
+  - strRegression
+- title: Session Information
+  contents:
+  - session
