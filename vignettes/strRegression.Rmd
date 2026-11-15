@@ -1,0 +1,73 @@
+---
+title: "strRegression: Structure of Regression Functions"
+author: "Ivan Jacob Agaloos Pesigan"
+output: rmarkdown::html_vignette
+bibliography: "vignettes.bib"
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
+nocite: |
+  @RCoreTeam-2026
+vignette: >
+  %\VignetteIndexEntry{strRegression: Structure of Regression Functions}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r}
+#| include = FALSE
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## Description
+
+Internal functions for the structure of a linear regression model
+with random regressors in R [@RCoreTeam-2026]:
+the model-implied covariance matrix,
+partial and standardized slopes,
+R-squared and adjusted R-squared,
+semipartial and partial correlations,
+Cohen's f-squared,
+and the Jacobian matrices of these quantities.
+The functions have no input checks and are copied by other projects.
+
+## Installation
+
+You can install the development version of `strRegression` from
+[GitHub](https://github.com/ijapesigan/strRegression) with:
+
+```r
+if (!require("pak")) install.packages("pak")
+pak::pkg_install("ijapesigan/strRegression")
+```
+
+## Example
+
+The functions are internal, so they are called with `:::`.
+The model-implied covariance matrix from the parameters
+of a regression with two regressors.
+
+```{r}
+beta <- c(0.5, 0.3)
+sigmacapx <- matrix(data = c(1, 0.2, 0.2, 2), nrow = 2)
+sigmacap <- strRegression:::.SigmaofTheta(
+  beta = beta,
+  sigmasq = 0.4,
+  sigmacapx = sigmacapx
+)
+sigmacap
+```
+
+R-squared and the standardized slopes from the covariance matrix.
+
+```{r}
+strRegression:::.RSqofSigma(sigmacap = sigmacap, k = 3)
+strRegression:::.BetaStarofSigma(
+  sigmacap = sigmacap,
+  q = 1 / sqrt(x = diag(x = sigmacap)),
+  k = 3
+)
+```
+
+## References

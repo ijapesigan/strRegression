@@ -1,0 +1,33 @@
+Package: strRegression
+Title: Structure of Regression Functions
+Version: 0.0.1
+Authors@R: 
+    person(given = "Ivan Jacob Agaloos",
+           family = "Pesigan",
+           role = c("aut", "cre", "cph"),
+           email = "r.jeksterslab@gmail.com",
+           comment = c(ORCID = "0000-0003-4818-8420"))
+Description: Internal functions for the structure of a linear regression
+    model with random regressors: the model-implied covariance matrix
+    from the regression parameters, partial and standardized slopes,
+    R-squared and adjusted R-squared, semipartial and partial
+    correlations, Cohen's f-squared, selective standardization,
+    parameter index helpers, and the Jacobian matrices of these quantities.
+    The functions have no input checks and are copied by other projects.
+URL: https://github.com/ijapesigan/strRegression,
+        https://ijapesigan.github.io/strRegression/
+BugReports: https://github.com/ijapesigan/strRegression/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Depends: R (>= 3.0.0)
+Imports: numDeriv, Rcpp
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.1.1.9000
+NeedsCompilation: yes
+Packaged: 2026-11-15 06:29:51 UTC; root
+Author: Ivan Jacob Agaloos Pesigan [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-4818-8420>)
+Maintainer: Ivan Jacob Agaloos Pesigan <r.jeksterslab@gmail.com>
