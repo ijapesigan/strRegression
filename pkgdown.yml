@@ -1,0 +1,10 @@
+pandoc: '3.14'
+pkgdown: 2.2.1
+pkgdown_sha: ~
+articles:
+  session: session.html
+  strRegression: strRegression.html
+last_built: 2026-11-15T06:33Z
+urls:
+  reference: https://ijapesigan.github.io/strRegression//reference
+  article: https://ijapesigan.github.io/strRegression//articles
