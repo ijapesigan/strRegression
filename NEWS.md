@@ -1,3 +1,10 @@
+# strRegression 0.0.2
+
+## Other changes
+
+- The linearAlgebra copies refreshed from linearAlgebra 0.0.5 and the rhoMatrix copy from rhoMatrix 0.0.3
+  (`.DMat()` faster, same results; named examples).
+
 # strRegression 0.0.1
 
 ## Initial release

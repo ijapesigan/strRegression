@@ -16,7 +16,7 @@
 #' @return Numeric \eqn{k \times k} symmetric matrix.
 #'
 #' @examples
-#' // In C++: SymofVechCpp(vech_row, 3);
+#' # C++ only: SymofVechCpp(x = vech_row, k = 3)
 #'
 #' @noRd
 NULL
