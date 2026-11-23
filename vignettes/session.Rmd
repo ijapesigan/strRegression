@@ -1,6 +1,7 @@
 ---
 title: "strRegression: Session"
 author: "Ivan Jacob Agaloos Pesigan"
+date: "2026-11-23 03:31:10"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{strRegression: Session}
@@ -12,14 +13,14 @@ vignette: >
 
 
 ``` r
-library(package = "strRegression")
+library(strRegression)
 ```
 
-## Session
+# Session
 
 
 ``` r
-utils::sessionInfo()
+sessionInfo()
 #> R version 4.6.2 (2026-10-29)
 #> Platform: x86_64-pc-linux-gnu
 #> Running under: Ubuntu 26.04.1 LTS
@@ -51,11 +52,11 @@ utils::sessionInfo()
 #>  [9] rlang_1.3.0     evaluate_1.0.5
 ```
 
-## Packages
+# Packages
 
 
 ``` r
-utils::installed.packages()[, c("Package", "Version")]
+installed.packages()[, c("Package", "Version")]
 #>                   Package             Version     
 #> rProject          "rProject"          "0.0.76"    
 #> strRegression     "strRegression"     "0.0.2"     
@@ -467,7 +468,7 @@ utils::installed.packages()[, c("Package", "Version")]
 #> utils             "utils"             "4.6.2"
 ```
 
-## CPU
+# CPU
 
 
 ```
@@ -486,7 +487,7 @@ utils::installed.packages()[, c("Package", "Version")]
 #> Socket(s):                               1
 #> Stepping:                                0
 #> Frequency boost:                         enabled
-#> CPU(s) scaling MHz:                      47%
+#> CPU(s) scaling MHz:                      43%
 #> CPU max MHz:                             5060.9761
 #> CPU min MHz:                             1219.5129
 #> BogoMIPS:                                4990.62
@@ -519,12 +520,12 @@ utils::installed.packages()[, c("Package", "Version")]
 #> Vulnerability Vmscape:                   Mitigation; IBPB on VMEXIT
 ```
 
-## Memory
+# Memory
 
 
 ```
 #>                total        used        free      shared  buff/cache   available
-#> Mem:            44Gi       2.7Gi        39Gi        13Mi       2.6Gi        41Gi
+#> Mem:            44Gi       2.8Gi        39Gi        13Mi       2.8Gi        41Gi
 #> Swap:           22Gi          0B        22Gi
-#> Total:          66Gi       2.7Gi        62Gi
+#> Total:          66Gi       2.8Gi        61Gi
 ```
