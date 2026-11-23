@@ -1,12 +1,12 @@
 # strRegression: Session
 
 \
-[`library`](https://rdrr.io/r/base/library.html)`(``package ``=`` ``"strRegression"``)`
+[`library`](https://rdrr.io/r/base/library.html)`(`[`strRegression`](https://github.com/ijapesigan/strRegression)`)`
 
 ## Session
 
 \
-`utils``::`[`sessionInfo`](https://rdrr.io/r/utils/sessionInfo.html)`(``)`\
+[`sessionInfo`](https://rdrr.io/r/utils/sessionInfo.html)`(``)`\
 `#> R version 4.6.2 (2026-10-29)`\
 `#> Platform: x86_64-pc-linux-gnu`\
 `#> Running under: Ubuntu 26.04.1 LTS`\
@@ -40,7 +40,7 @@
 ## Packages
 
 \
-`utils``::`[`installed.packages`](https://rdrr.io/r/utils/installed.packages.html)`(``)``[``, `[`c`](https://rdrr.io/r/base/c.html)`(``"Package"``, ``"Version"``)``]`\
+[`installed.packages`](https://rdrr.io/r/utils/installed.packages.html)`(``)``[``, `[`c`](https://rdrr.io/r/base/c.html)`(``"Package"``, ``"Version"``)``]`\
 `#>                   Package             Version     `\
 `#> rProject          "rProject"          "0.0.76"    `\
 `#> strRegression     "strRegression"     "0.0.2"     `\
@@ -468,7 +468,7 @@
     #> Socket(s):                               1
     #> Stepping:                                0
     #> Frequency boost:                         enabled
-    #> CPU(s) scaling MHz:                      47%
+    #> CPU(s) scaling MHz:                      43%
     #> CPU max MHz:                             5060.9761
     #> CPU min MHz:                             1219.5129
     #> BogoMIPS:                                4990.62
@@ -503,6 +503,6 @@
 ## Memory
 
     #>                total        used        free      shared  buff/cache   available
-    #> Mem:            44Gi       2.7Gi        39Gi        13Mi       2.6Gi        41Gi
+    #> Mem:            44Gi       2.8Gi        39Gi        13Mi       2.8Gi        41Gi
     #> Swap:           22Gi          0B        22Gi
-    #> Total:          66Gi       2.7Gi        62Gi
+    #> Total:          66Gi       2.8Gi        61Gi
